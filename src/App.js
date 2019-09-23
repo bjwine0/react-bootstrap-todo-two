@@ -11,12 +11,14 @@ class App extends React.Component {
     items:[],
     id: uuid(),
     name: '',
-    editItem:false
+    editItem:false,
+    itemsCounter: 0
   }
   
   handleChange = (e) => {
     this.setState({
-      item: e.target.value
+      item: e.target.value,
+
     });
   };
   
@@ -33,7 +35,8 @@ class App extends React.Component {
       items: updatedItems,
       item: '',
       id: uuid(),
-      editItem: false
+      editItem: false,
+      
     })
   };
   
@@ -71,7 +74,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-10 mx-auto col-md-8 mt-4">
             <h3 className="text-capitalize text-center">
-              todoInput
+              Give Me Something To Do!!
             </h3>
             <TodoInput 
             item={this.state.item} 

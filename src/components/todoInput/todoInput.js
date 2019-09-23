@@ -15,7 +15,7 @@ export default class todoInput extends Component {
             <input 
             type="text" 
             className="form-control text-capitalize" 
-            placeholder="add a todo item"
+            placeholder="enter new item"
             value={item}
             onChange={handleChange}
             />
@@ -23,7 +23,7 @@ export default class todoInput extends Component {
           <button 
           type="submit" 
           className={editItem ? 'btn btn-block btn-success mt-3' : 'btn btn-block btn-primary mt-3'} >
-            {editItem ? 'edit item' : 'add item'}</button>
+            {editItem ? 'Edit Item' : 'Add Item'}</button>
         </form>
       </div>
     )
